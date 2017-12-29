@@ -1,0 +1,59 @@
+{
+  "name": "paw-javascript-fetch-generator",
+  "version": "1.0.0",
+  "description": "Paw extension to generate requests using fetch().",
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdougherty/paw-javascript-fetch-generator.git"
+  },
+  "keywords": [
+    "paw",
+    "javascript",
+    "fetch",
+    "extension"
+  ],
+  "author": "Brad Dougherty <me@brad.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdougherty/paw-javascript-fetch-generator/issues"
+  },
+  "homepage": "https://github.com/bdougherty/paw-javascript-fetch-generator#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-bdougherty": "^4.1.1",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": "bdougherty",
+    "globals": [
+      "InputField",
+      "registerCodeGenerator"
+    ],
+    "overrides": [
+      {
+        "files": "JavaScriptFetchGenerator.js",
+        "rules": {
+          "unicorn/filename-case": [
+            "error",
+            {
+              "case": "pascalCase"
+            }
+          ],
+          "new-cap": [
+            "error",
+            {
+              "newIsCap": true,
+              "capIsNew": true,
+              "capIsNewExceptions": [
+                "InputField"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
