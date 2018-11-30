@@ -23,8 +23,8 @@
   "homepage": "https://github.com/bdougherty/paw-javascript-fetch-generator#readme",
   "dependencies": {},
   "devDependencies": {
-    "eslint-config-bdougherty": "^4.1.1",
-    "xo": "^0.18.2"
+    "eslint-config-bdougherty": "^5.1.1",
+    "xo": "^0.23.0"
   },
   "xo": {
     "extends": "bdougherty",

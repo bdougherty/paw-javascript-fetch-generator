@@ -59,7 +59,7 @@ class JavaScriptFetchGenerator {
 				fetchOptions.push(`redirect: 'error'`);
 			}
 
-			const optionsString = fetchOptions.length < 1 ? '' : `, {
+			const optionsString = fetchOptions.length === 0 ? '' : `, {
 		${fetchOptions.join(',\n\t\t')}
 	}`;
 
