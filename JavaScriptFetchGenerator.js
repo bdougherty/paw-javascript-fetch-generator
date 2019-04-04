@@ -25,7 +25,7 @@ class JavaScriptFetchGenerator {
 
 	generate(context, requests) {
 		if (!Array.isArray(requests)) {
-			requests = [requests];
+			requests = [context.getCurrentRequest()];
 		}
 
 		let code = '';
